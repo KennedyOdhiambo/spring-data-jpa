@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import java.util.UUID;
 

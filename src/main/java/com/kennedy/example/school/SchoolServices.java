@@ -1,8 +1,11 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class SchoolServices {
     private final SchoolRepository schoolRepository;
 

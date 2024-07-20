@@ -1,6 +1,8 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import java.util.UUID;
+
+import com.kennedy.example.students.Students;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

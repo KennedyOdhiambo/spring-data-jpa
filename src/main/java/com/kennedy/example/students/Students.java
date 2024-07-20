@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.students;
 
 import jakarta.persistence.*;
 
@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.kennedy.example.school.School;
+import com.kennedy.example.school.StudentProfile;
 
 @Entity
 @Table(name = "students")

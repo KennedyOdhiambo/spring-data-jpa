@@ -1,6 +1,8 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.kennedy.example.students.Students;
+
 import jakarta.persistence.*;
 
 import java.util.List;

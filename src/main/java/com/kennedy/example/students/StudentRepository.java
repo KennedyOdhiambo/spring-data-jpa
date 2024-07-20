@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.students;
 
 import java.util.List;
 import java.util.UUID;

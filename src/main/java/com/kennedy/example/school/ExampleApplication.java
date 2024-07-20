@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

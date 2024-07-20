@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.students;
 
 public record ListStudentsDto(
 		String firstName,
@@ -9,6 +9,5 @@ public record ListStudentsDto(
 
 		int age,
 
-		String schoolName
-) {
+		String schoolName) {
 }

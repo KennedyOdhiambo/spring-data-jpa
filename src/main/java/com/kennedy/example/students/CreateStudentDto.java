@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.students;
 
 import java.util.UUID;
 
@@ -7,6 +7,5 @@ public record CreateStudentDto(
 		String lastName,
 		String email,
 		int age,
-		UUID schoolId
-) {
+		UUID schoolId) {
 }

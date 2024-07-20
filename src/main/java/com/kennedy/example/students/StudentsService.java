@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.students;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,6 +6,9 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
+
+import com.kennedy.example.school.School;
+import com.kennedy.example.school.SchoolRepository;
 
 @Service
 public class StudentsService {

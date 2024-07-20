@@ -1,4 +1,4 @@
-package com.kennedy.example;
+package com.kennedy.example.school;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
