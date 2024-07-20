@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "students")
 public class Students {
@@ -27,6 +29,7 @@ public class Students {
 	private School school;
 
 	@OneToMany(mappedBy = "students", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<StudentProfile> profiles;
 
 	public Students() {

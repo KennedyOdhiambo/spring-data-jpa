@@ -24,10 +24,10 @@ public class SchoolController {
     }
 
     @GetMapping("/school/list")
-    public List<ListSchoolsDto> listSchools () {
+    public List<ListSchoolsDto> listSchools() {
         return schoolRepository.findAll().stream()
-        .map(school -> new ListSchoolsDto(school.getName()))
-        .collect(Collectors.toList());
+                .map(school -> new ListSchoolsDto(school.getName()))
+                .collect(Collectors.toList());
     }
 
 }
