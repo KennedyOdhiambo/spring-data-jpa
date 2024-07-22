@@ -13,25 +13,24 @@ import com.kennedy.example.school.SchoolRepository;
 @Service
 public class StudentsService {
 
-    private final SchoolRepository schoolRepository;
     private final StudentRepository studentRepository;
+    private final SchoolRepository schoolRepository;
+    private final StudentMapper studentMapper;
 
-    public StudentsService(SchoolRepository schoolRepository, StudentRepository studentRepository) {
-        this.schoolRepository = schoolRepository;
+    public StudentsService(StudentRepository studentRepository, SchoolRepository schoolRepository,
+            StudentMapper studentMapper) {
+
         this.studentRepository = studentRepository;
+        this.studentMapper = studentMapper;
+        this.schoolRepository = schoolRepository;
     }
 
     public CreateStudentDto createStudent(CreateStudentDto studentDto) {
         School school = schoolRepository.findById(studentDto.schoolId())
                 .orElseThrow(() -> new RuntimeException("School not found"));
 
-        var student = new Students(
-                studentDto.firstName(),
-                studentDto.lastName(),
-                studentDto.email(),
-                studentDto.age());
+        var student = studentMapper.toStudent(studentDto, school);
 
-        student.setSchool(school);
         student = studentRepository.save(student);
         return new CreateStudentDto(
                 student.getFirstName(),
